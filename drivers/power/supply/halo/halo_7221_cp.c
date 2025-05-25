@@ -555,6 +555,10 @@ static int halo_set_mode(struct halo7221_dev *chip, int mode)
 	return rc;
 }
 
+#ifdef POWER_SUPPLY_PROP_DIV_2_MODE
+    POWER_SUPPLY_PROP_DIV_2_MODE,
+#endif
+
 static enum power_supply_property halo_props[] = {
 	POWER_SUPPLY_PROP_DIV_2_MODE,
 };
